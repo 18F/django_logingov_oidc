@@ -40,6 +40,7 @@ class OpenIdConnectBackend(ModelBackend):
         openid_data["last_name"] = kwargs.get("family_name", "")
         openid_data["last_name"] = kwargs.get("last_name", "")
         openid_data["email"] = kwargs.get("email", "")
+        openid_data["all_emails"] = kwargs.get("all_emails", [])
 
         # Note that this could be accomplished in one try-except clause, but
         # instead we use get_or_create when creating unknown users since it has

@@ -4,15 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "django_logingov_backend"
-version = "0.0.1"
+version = "0.0.3"
 authors = [
-  { name="Example Author", email="author@example.com" },
+  { name="18F Developers", email="18fdev@gsa.gov" },
 ]
-description = "A small example package"
+description = "A Django OpenID Connect authentication backend designed for use with Login.gov"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
 ]

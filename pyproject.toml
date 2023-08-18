@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "django_logingov_backend"
-version = "0.0.3"
+version = "0.0.5"
 authors = [
   { name="18F Developers", email="18fdev@gsa.gov" },
 ]

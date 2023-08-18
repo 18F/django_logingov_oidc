@@ -52,6 +52,7 @@ class OpenIdConnectBackend(ModelBackend):
             user, created = UserModel.objects.update_or_create(**args)
             if created:
                 user = self.configure_user(user, **kwargs)
+                user.save()
         else:
             try:
                 user = UserModel.objects.get_by_natural_key(username)
